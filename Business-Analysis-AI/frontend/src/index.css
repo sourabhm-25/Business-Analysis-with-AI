@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Fixed Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #1f2937; /* Dark gray */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Ensure Content Adjusts for Sidebar */
+.main-content {
+  margin-left: 250px; /* Same width as Sidebar */
+  padding: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+
