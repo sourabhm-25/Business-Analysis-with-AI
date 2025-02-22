@@ -13,28 +13,28 @@ function Sidebar() {
       <nav className="flex-1">
         <ul>
           <li className="mb-2">
+            <Link to="/home" className="flex items-center p-2 hover:bg-gray-700 rounded">
+              🏠 Home                            
+            </Link>
+          </li>
+          <li className="mb-2">
             <Link to="/dashboard" className="flex items-center p-2 hover:bg-gray-700 rounded">
-              🏠 Dashboard                            
+              👥 DashBoard
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/team" className="flex items-center p-2 hover:bg-gray-700 rounded">
-              👥 Team
+            <Link to="/uploaddata" className="flex items-center p-2 hover:bg-gray-700 rounded">
+              📁 UploadData
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/projects" className="flex items-center p-2 hover:bg-gray-700 rounded">
-              📁 Projects
+            <Link to="/Predictions" className="flex items-center p-2 hover:bg-gray-700 rounded">
+              📅 Predictions
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/calendar" className="flex items-center p-2 hover:bg-gray-700 rounded">
-              📅 Calendar
-            </Link>
-          </li>
-          <li className="mb-2">
-            <Link to="/documents" className="flex items-center p-2 hover:bg-gray-700 rounded">
-              📄 Documents
+            <Link to="/aboutus" className="flex items-center p-2 hover:bg-gray-700 rounded">
+              📄 AboutUs
             </Link>
           </li>
           <li className="mb-2">
