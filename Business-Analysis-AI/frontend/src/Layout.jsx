@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 
 const Layout = () => {
   const location = useLocation();
-  const showFooter = location.pathname === "/"; // Show footer only on the home page
+  const showFooter = location.pathname === "/home"; // Show footer only on the home page
 
   return (
     <div className="flex">
