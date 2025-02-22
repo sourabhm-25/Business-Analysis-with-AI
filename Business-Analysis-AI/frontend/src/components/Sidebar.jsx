@@ -14,7 +14,7 @@ function Sidebar() {
         <ul>
           <li className="mb-2">
             <Link to="/dashboard" className="flex items-center p-2 hover:bg-gray-700 rounded">
-              🏠 Dashboard
+              🏠 Dashboard                            
             </Link>
           </li>
           <li className="mb-2">
