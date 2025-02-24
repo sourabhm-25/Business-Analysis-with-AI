@@ -1,9 +1,15 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Phone, BarChart3, FileText, Activity } from "lucide-react";
 
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/Upload-Data");
+  };
   return (
     <div className="p-6">
       {/* Hero Section */}
@@ -18,6 +24,7 @@ function Home() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-full shadow-md flex items-center gap-2 mx-auto hover:bg-gray-200 transition"
+          onClick={handleGetStartedClick}
         >
           Get Started <ArrowRight size={20} />
         </motion.button>

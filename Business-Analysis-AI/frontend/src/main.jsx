@@ -5,6 +5,14 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, N
 import "./index.css";
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
+import UploadData from "./pages/UploadData.jsx";
+
+
+function initializeApp() {
+  console.log("App is initializing..."); // You can replace this with any function
+}
+
+initializeApp(); // ✅ Call function in main.jsx
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -12,6 +20,7 @@ const router = createBrowserRouter(
       {/* Redirect '/' to '/home' */}
       <Route index element={<Navigate to="/home" replace />} />
       <Route path='home' element={<Home />} />
+      <Route path='upload-data' element={<UploadData />} /> {/* Add the UploadData route */}
     </Route>
   )
 );
