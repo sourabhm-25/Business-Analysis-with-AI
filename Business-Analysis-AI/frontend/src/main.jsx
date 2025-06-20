@@ -5,7 +5,9 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, N
 import "./index.css";
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
+import Dashboard from "./pages/DashBoard.jsx";
 import UploadData from "./pages/UploadData.jsx";
+import Prediction from "./pages/Prediction.jsx";
 
 
 function initializeApp() {
@@ -21,6 +23,9 @@ const router = createBrowserRouter(
       <Route index element={<Navigate to="/home" replace />} />
       <Route path='home' element={<Home />} />
       <Route path='upload-data' element={<UploadData />} /> {/* Add the UploadData route */}
+      <Route path='dashboard' element={<Dashboard />} />
+      <Route path='predictions' element={<Prediction />} />
+      {/* Lazy load the Prediction component */}
     </Route>
   )
 );

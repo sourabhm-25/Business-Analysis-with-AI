@@ -18,17 +18,17 @@ function Sidebar() {
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/dashboard" className="flex items-center p-2 hover:bg-gray-700 rounded">
+            <Link to="./dashboard" className="flex items-center p-2 hover:bg-gray-700 rounded">
               👥 DashBoard
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/uploaddata" className="flex items-center p-2 hover:bg-gray-700 rounded">
+            <Link to="/upload-data" className="flex items-center p-2 hover:bg-gray-700 rounded">
               📁 UploadData
             </Link>
           </li>
           <li className="mb-2">
-            <Link to="/Predictions" className="flex items-center p-2 hover:bg-gray-700 rounded">
+            <Link to="/predictions" className="flex items-center p-2 hover:bg-gray-700 rounded">
               📅 Predictions
             </Link>
           </li>
